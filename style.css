@@ -1,0 +1,203 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #efefef;
+}
+#hearder{
+  background-color: #fff;
+  width: 100vw;
+  position: fixed;
+  box-shadow: 1px 1px 2px #dfdfdf;
+
+}
+.container{
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
+}
+.container-hearder{
+  display: flex;
+  height: 96px;
+}
+.hearder-left{
+  width: auto;
+  display: flex;
+  height: inherit;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-left: 20px;
+}
+nav li{
+  list-style: none;
+}
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: #828282;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 38px 10px;
+  border-bottom: 5px solid transparent;
+}
+nav li a:hover{
+  border-bottom: 5px solid #df3d10;
+}
+nav li .action{
+  border-bottom: 5px solid #e6a63c;
+  background-color: #dfdfdf;
+  color: #676767;
+}
+.hearder-right{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  height: inherit;
+  width: 100%;
+  justify-content: flex-end;
+}
+.button{
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  display: inline-block;
+  background-color: #db5021;
+  border-radius: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+}
+.area-canditado{
+  margin-right: 45px;
+}
+.button:hover{
+  background-color: #bd4117;
+  
+}
+#plano-fundo-vestibular{
+  background-image: url(images/plano-fundo.png);
+  background-position: center;
+  background-size: cover;
+  height: 275px;
+}
+.container-inscricao{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  border-top: 10px solid #df3d10;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #828282;
+}
+.inscricoes-top{
+  background-color: #e6a63c;
+  height: 90px;
+  color: #fff;
+  font-size: 26px;
+  padding-top: 53px;
+  padding-left: 30px;
+}
+.inscricoes-top div{
+  text-shadow: 1px 2px 2px #676767;
+}
+.inscricoes-conteudo{
+  padding: 30px;
+  display: grid;
+  grid-template-rows: 215px;
+}
+.inscricoes-cont--item h3{
+  font-size: 24px;
+  margin: 0;
+  margin-bottom: 24px;
+  font-weight: bold;
+}
+.inscricoes-cont--item h2{
+  font-size: 16px;
+  margin: 16px 0px;
+  color: #2178a4;
+  font-weight: bold;
+}
+.inscricoes-cont--item div{
+  font-size: 15px;
+  line-height: 25px;
+}
+.incricaoes-button{
+  padding-top: 15px;
+  border-top: 1px solid #efefef;
+}
+.inscricoes-cand{
+  background-color: #e8ac4a;
+}
+.inscricoes-calen{
+  background-color: #e9b257;
+}
+.calendario-item{
+  padding: 7px;
+  border-left: 3px solid #dfdfdf;
+  margin: 8px 0px;
+  line-height: 21px;
+}
+.incricoes-programacao a{
+  padding: 4px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #db5021;
+}
+.isencao{
+  grid-area: 2/1/3/3;
+  padding: 0px 15px 15px 15px;
+}
+.isencao-consulta{
+  padding: 10px 20px;
+  background-color: #d1ecf1;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #bee5eb;
+}
+.isencao-consulta h4{
+  margin: 0;
+  color: #0c5460;
+}
+.isencao-consulta small{
+  color: #828282;
+  font-weight: normal;
+}
+.isencao-consulta a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 20px;
+  color: #828282;
+  font-size: 14px;
+}
+.boleto{
+  padding: 0px 15px 15px 15px;
+}
+.boleto-vencido{
+  padding: 15px 20px;
+  background-color: #fff3cd;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #ffeeba;
+}
+.boleto-vencido h4{
+  margin: 0;
+  color: #a56404;
+}
+.boleto-vencido a{
+  text-decoration: none;
+  font-weight: normal;
+  color:#df3d10;
+  font-size: 14px;
+}
