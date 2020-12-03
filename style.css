@@ -6,12 +6,24 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #efefef;
 }
+
+/*
+div usada para container geral
+*/
+.container-back-white{
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 #828282;
+  margin-bottom: 30px !important;
+}
+
+/*
+Início do style do cabeçalho
+*/
 #hearder{
   background-color: #fff;
   width: 100vw;
   position: fixed;
   box-shadow: 1px 1px 2px #dfdfdf;
-
 }
 .container{
   max-width: 1110px;
@@ -31,16 +43,16 @@ body{
   display: flex;
   align-items: center;
 }
-nav ul{
+.container-hearder nav ul{
   margin: 0;
   padding: 0;
   display: flex;
   margin-left: 20px;
 }
-nav li{
+.container-hearder nav li{
   list-style: none;
 }
-nav li a {
+.container-hearder nav li a {
   display: block;
   text-decoration: none;
   color: #828282;
@@ -49,10 +61,10 @@ nav li a {
   padding: 38px 10px;
   border-bottom: 5px solid transparent;
 }
-nav li a:hover{
+.container-hearder nav li a:hover{
   border-bottom: 5px solid #df3d10;
 }
-nav li .action{
+.container-hearder nav li .action{
   border-bottom: 5px solid #e6a63c;
   background-color: #dfdfdf;
   color: #676767;
@@ -68,7 +80,7 @@ nav li .action{
 .button{
   text-decoration: none;
   font-size: 14px;
-  color: #fff;
+  color: #fff !important;
   display: inline-block;
   background-color: #db5021;
   border-radius: 5px;
@@ -80,20 +92,26 @@ nav li .action{
 }
 .button:hover{
   background-color: #bd4117;
-  
 }
+
+/*
+background do banner geral
+*/
+
 #plano-fundo-vestibular{
   background-image: url(images/plano-fundo.png);
   background-position: center;
   background-size: cover;
   height: 275px;
 }
+
+/*
+Início do style da primeira section 'área inscrições'
+*/
 .container-inscricao{
   display: grid;
   grid-template-columns: repeat(3,1fr);
   border-top: 10px solid #df3d10;
-  background-color: #fff;
-  box-shadow: 2px 2px 2px #828282;
 }
 .inscricoes-top{
   background-color: #e6a63c;
@@ -200,4 +218,179 @@ nav li .action{
   font-weight: normal;
   color:#df3d10;
   font-size: 14px;
+}
+.boleto-vencido a:hover{
+  text-decoration: underline;
+}
+
+/*
+Início do style da section dos video de apresentação do vestibular
+*/
+.container-video{
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(2,370px auto);
+}
+.video-texto{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 15px;
+}
+.video-texto small{
+  font-size: 14px;
+  color:#676767;
+  font-weight: normal;
+}
+.video-texto strong{
+  font-size: 24px;
+  font-weight: 900;
+  color: #666;
+}
+.video-texto h3{
+  text-align: center;
+}
+.img-video img{
+  border: 1px solid #676767;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+Início do style da terceira section 'tópicos de cursos, dúvidas...'
+*/
+
+.container-topicos{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-bottom: 10px solid #df3d10;
+  padding-bottom: 15px;
+}
+.topico-vestibular{
+  text-align: center;
+  padding: 0px 15px 15px 15px;
+  border-right: 1px solid #efefef;
+}
+.topico-vest-img-titulo{
+  background-color: #fbfbfb;
+  padding: 15px 0px;
+  margin: 0px -15px;
+}
+.topico-vestibular h3{
+  height: 50px;
+  display: grid;
+}
+.topico-vestibular small{
+  font-size: 14px;
+  color:#676767;
+  font-weight: normal;
+}
+.topico-vestibular h3{
+  font-size: 24px;
+  font-weight: 900;
+  color: #666;
+  margin: 0;
+  margin-top: 24px;
+}
+.topico-vestibular p{
+  margin: 0;
+  margin-top: 30px;
+  line-height: 25px;
+  color: #666;
+}
+.topico-todos-cursos{
+  color: #db5021;
+  font-size: 14px;
+  text-decoration: none;
+  margin-left: 10px;
+}
+.topico-link-bottom{
+  display: inline-block;
+  color: #db5021;
+  font-size: 14px;
+  text-decoration: none;
+  margin-top: 30px;
+}
+.topico-vestibular a:hover{
+  text-decoration: underline;
+}
+.topico-vest-form{
+  padding: 15px;
+}
+.form-vestibular-cursos input{
+  padding: 9px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-size: 15px;
+  outline:0;
+}
+.form-button{
+  padding-top: 17px;
+}
+.topico-legislacao{
+  padding-top: 15px;
+}
+.topico-legislacao-link{
+  display: inline-block;
+  color: #db5021;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 13px 0px;
+  border-bottom: 1px solid #efefef;
+  width: 100%;
+}
+.topico-legislacao-link:last-child{
+  border: 0;
+}
+#footer-top{
+  background-color: #7c7c7c;
+}
+.container-footer-top{
+  padding: 8px 15px;
+}
+.footer-top-1{
+  display: flex;
+  justify-content: flex-end;
+}
+.container-footer-top nav ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.container-footer-top nav li{
+  list-style: none;
+}
+.container-footer-top nav li a {
+  display: block;
+  text-decoration: none;
+  color: #d7ddca;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 5px 10px;
+}
+.container-footer-top nav li a:first-child{
+  padding-left: 0;
+}
+.container-footer-top nav li a:hover{
+  text-decoration: underline;
+}
+
+/*
+Início do style do rodapé 
+*/
+
+#footer-bottom{
+  background-color: #6e6e6e;
+}
+.container-footer-bottom{
+  padding: 9px;
+  font-size: 13px;
+  color: #ccc;
+}
+.container-footer-bottom small{
+  font-size: 13px;
+  text-decoration: underline;
+  cursor: pointer;
 }
