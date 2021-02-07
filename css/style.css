@@ -115,7 +115,7 @@ background do banner geral
 */
 
 #plano-fundo-vestibular{
-  background-image: url(images/plano-fundo.png);
+  background-image: url(../images/plano-fundo.png);
   background-position: center;
   background-size: cover;
   height: 275px;
@@ -437,8 +437,14 @@ Início do style do rodapé
   .button-mobile{
     display: block;
   }
+  #plano-fundo-vestibular{
+    background-image: url(../images/plano-fundo-tablet.png);
+    background-position: center;
+    background-size: cover;
+  }
   .hearder-right{
     flex-direction: column;
+    display: none;
   }
   .hearder-right-menu{
     width: 100%;
@@ -465,10 +471,6 @@ Início do style do rodapé
   .area-canditado{
     margin: 0;
     margin-bottom: 15px;
-  }
-
-  #section-inscricao{
-    margin-top: -50px;
   }
   .container-inscricao{
     grid-template-columns: repeat(2, 1fr);
@@ -501,17 +503,14 @@ Início do style do rodapé
     text-align: center;
   }
 }
-@media (max-width:480px){
-  #plano-fundo-vestibular{
-    background-image: url(images/plano-fundo-mobile.png);
-    background-position: center;
-    background-size: cover;
-    height: 275px;
-  }
-}
 @media  (max-width:767px){
   #hearder{
     border-radius: 5px;
+  }
+  #plano-fundo-vestibular{
+    background-image: url(../images/plano-fundo-tablet.png);
+    background-position: center;
+    background-size: cover;
   }
   .logo img{
     height: 36px;
@@ -534,6 +533,7 @@ Início do style do rodapé
   }
   .hearder-right{
     flex-direction: column;
+    display: none;
   }
   .hearder-right-menu{
     width: 100%;
@@ -560,11 +560,6 @@ Início do style do rodapé
   .area-canditado{
     margin: 0;
     margin-bottom: 15px;
-  }
-
-
-  #section-inscricao{
-    margin-top: -50px;
   }
   .container-inscricao{
     grid-template-columns:  1fr;
@@ -609,8 +604,16 @@ Início do style do rodapé
   .container-footer-top nav ul {
     flex-direction: column;
     align-items: center;
-}
+  }
   .container-footer-bottom{
     text-align: center;
+  }
+}
+@media (max-width:480px){
+  #plano-fundo-vestibular{
+    background-image: url(../images/plano-fundo-mobile.png);
+    background-position: center;
+    background-size: cover;
+    height: 275px;
   }
 }
